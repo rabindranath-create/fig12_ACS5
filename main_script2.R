@@ -93,11 +93,11 @@ results <- rbind(results_200, results_225)
 # Format output
 results_out <- data.frame(
   Index = paste0('"', 1:nrow(results), '"'),  # Quoted index
-  results[, c("N_c", "Length", "Cost", "NumDisambigs")]  # Make sure column names match
+  results[, c("N_o", "Length", "Cost", "NumDisambigs")]  # Make sure column names match
 )
 
 # Define the custom header (space-separated, quoted)
-header <- '"n_c" "length" "cost" "number of disambiguations"'
+header <- '"n_o" "length" "cost" "number of disambiguations"'
 
 # Define output path
 txt_path <- file.path(output_dir, "results_ACS4_clutter.txt")
