@@ -42,7 +42,7 @@ results_250 <- data.frame(
 for (i in 1:100) {
   set.seed(400+i)
   obs_gen_para <- c(gamma = 0.3, d = 5, noPoints = 250)
-  result <- ACS_Alg_O(obs_gen_para, k = 5, lambda)
+  result <- ACS_Alg_O(obs_gen_para,kei = 5, lambda)
   
   results_250[i, ] <- list(
     Run = i,
@@ -71,7 +71,7 @@ results_275 <- data.frame(
 for (i in 1:100) {
   set.seed(400+i)
   obs_gen_para <- c(gamma = 0.3, d = 5, noPoints = 275)
-  result <- ACS_Alg_O(obs_gen_para, k = 5, lambda)
+  result <- ACS_Alg_O(obs_gen_para,kei = 5, lambda)
   
   results_275[i, ] <- list(
     Run = i,
